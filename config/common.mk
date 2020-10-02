@@ -72,6 +72,12 @@ PRODUCT_PACKAGES += \
     SoundPickerPrebuilt \
     CustomDoze \
     OmniSwitch
+    
+# Navbar
+PRODUCT_PACKAGES += \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium \
+    GesturalNavigationOverlayHidden
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
