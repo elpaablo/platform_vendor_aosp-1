@@ -83,6 +83,10 @@ PRODUCT_PACKAGES += \
     GesturalNavigationOverlayMedium \
     GesturalNavigationOverlayHidden
 
+# SystemUI plugins
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
+
 # Cutout control overlays
 PRODUCT_PACKAGES += \
     HideCutout \
