@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/alarms/Loose_change.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Loose_change.ogg \
     $(LOCAL_PATH)/alarms/Rolling_fog.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Rolling_fog.ogg \
     $(LOCAL_PATH)/alarms/Spokes.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Spokes.ogg \
+    $(LOCAL_PATH)/alarms/Gallop.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Gallop.ogg \
     $(LOCAL_PATH)/alarms/Sunshower.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Sunshower.ogg \
     $(LOCAL_PATH)/notifications/Beginning.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Beginning.ogg \
     $(LOCAL_PATH)/notifications/Coconuts.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Coconuts.ogg \
@@ -42,6 +43,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/notifications/Tuneup.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Tuneup.ogg \
     $(LOCAL_PATH)/notifications/Tweeter.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Tweeter.ogg \
     $(LOCAL_PATH)/notifications/Twinkle.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Twinkle.ogg \
+    $(LOCAL_PATH)/notifications/Birdsong.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Birdsong.ogg \
+    $(LOCAL_PATH)/notifications/Flick.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/Flick.ogg \
     $(LOCAL_PATH)/ringtones/Copycat.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Copycat.ogg \
     $(LOCAL_PATH)/ringtones/Crackle.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Crackle.ogg \
     $(LOCAL_PATH)/ringtones/Flutterby.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Flutterby.ogg \
@@ -53,6 +56,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ringtones/Monkey_around.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Monkey_around.ogg \
     $(LOCAL_PATH)/ringtones/Schools_out.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Schools_out.ogg \
     $(LOCAL_PATH)/ringtones/The_big_adventure.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/The_big_adventure.ogg \
+    $(LOCAL_PATH)/ringtones/Shooting_star.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Shooting_star.ogg \
     $(LOCAL_PATH)/ringtones/Zen_too.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Zen_too.ogg \
     $(LOCAL_PATH)/ui/audio_end.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/audio_end.ogg \
     $(LOCAL_PATH)/ui/audio_initiate.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/audio_initiate.ogg \
@@ -82,6 +86,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ui/WirelessChargingStarted.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/WirelessChargingStarted.ogg
 
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.alarm_alert=Bright_morning.ogg \
-    ro.config.ringtone=The_big_adventure.ogg \
-    ro.config.notification_sound=Popcorn.ogg
+    ro.config.alarm_alert=Gallop.ogg \
+    ro.config.ringtone=Shooting_star.ogg \
+    ro.config.notification_sound=Birdsong.ogg
+    
+

@@ -68,9 +68,8 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     Stk \
     AEXPapers \
-    WallpaperPickerGoogle \
-    Recorder \
-    ExactCalculator
+    ExactCalculator \
+    SoundPickerPrebuilt
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
@@ -164,3 +163,15 @@ include packages/overlays/Themes/themes.mk
 
 # Recommend using the non debug dexpreopter
 USE_DEX2OAT_DEBUG := false
+
+# Face Unlock
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.moto_unlock_service=true
+    
+# Gestures by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+
