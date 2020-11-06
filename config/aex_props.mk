@@ -32,3 +32,8 @@ PRODUCT_GENERIC_PROPERTIES += \
     ro.com.google.ime.theme_id=5 \
     persist.sys.disable_rescue=true
 
+# Enable blurs, hidden under dev option
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.surface_flinger.supports_background_blur=1 \
+    ro.sf.blurs_are_expensive=1 \
+#   persist.sys.sf.disable_blurs=1 \
