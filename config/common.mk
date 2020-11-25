@@ -69,7 +69,8 @@ PRODUCT_PACKAGES += \
     Stk \
     AEXPapers \
     ExactCalculator \
-    SoundPickerPrebuilt
+    SoundPickerPrebuilt \
+    CustomDoze
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \

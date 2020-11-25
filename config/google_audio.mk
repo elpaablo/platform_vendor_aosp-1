@@ -88,6 +88,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.config.alarm_alert=Gallop.ogg \
     ro.config.ringtone=Shooting_star.ogg \
-    ro.config.notification_sound=Birdsong.ogg
+    ro.config.notification_sound=Coconuts.ogg
     
 
