@@ -70,7 +70,8 @@ PRODUCT_PACKAGES += \
     AEXPapers \
     ExactCalculator \
     SoundPickerPrebuilt \
-    CustomDoze
+    CustomDoze \
+    OmniSwitch
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
