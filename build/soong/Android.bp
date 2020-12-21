@@ -66,6 +66,24 @@ gralloc_10_usage_bits {
     },
 }
 
+// QCOM specific config modules
+soong_config_module_type {
+    name: "librmnetctl_pre_uplink",
+    module_type: "cc_defaults",
+    config_namespace: "lineageQcomVars",
+    bool_variables: ["uses_pre_uplink_features_netmgrd"],
+    properties: ["cflags"],
+}
+
+librmnetctl_pre_uplink {
+    name: "librmnetctl_pre_uplink_defaults",
+    soong_config_variables: {
+        uses_pre_uplink_features_netmgrd: {
+            cflags: ["-DNO_UPLINK_FEATURES"],
+        },
+    },
+}
+
 soong_config_module_type {
     name: "surfaceflinger_fod_lib",
     module_type: "cc_defaults",
@@ -83,6 +101,24 @@ surfaceflinger_fod_lib {
         target_surfaceflinger_fod_lib: {
             cppflags: ["-DTARGET_PROVIDES_FOD_LIB"],
             whole_static_libs: ["%s"],
+        },
+    },
+}
+
+// Target platform agnostic config modules
+soong_config_module_type {
+    name: "disable_postrender_cleanup",
+    module_type: "cc_defaults",
+    config_namespace: "customGlobalVars",
+    bool_variables: ["disable_postrender_cleanup"],
+    properties: ["cppflags"],
+}
+
+disable_postrender_cleanup {
+    name: "disable_postrender_cleanup_defaults",
+    soong_config_variables: {
+        disable_postrender_cleanup: {
+            cppflags: ["-DDISABLE_POSTRENDER_CLEANUP"],
         },
     },
 }
@@ -107,4 +143,3 @@ surfaceflinger_qcom_extensions {
         },
     },
 }
-
