@@ -71,7 +71,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     SoundPickerPrebuilt \
     CustomDoze \
-    OmniSwitch
+    OmniSwitch \
+    Seedvault
     
 # Navbar
 PRODUCT_PACKAGES += \
