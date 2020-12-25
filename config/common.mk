@@ -73,7 +73,7 @@ PRODUCT_PACKAGES += \
     CustomDoze \
     OmniSwitch \
     Seedvault
-    
+
 # Navbar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
@@ -179,8 +179,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=true
-    
+
 # Gestures by default
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
-
