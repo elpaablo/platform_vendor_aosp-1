@@ -72,8 +72,9 @@ PRODUCT_PACKAGES += \
     SoundPickerPrebuilt \
     CustomDoze \
     OmniSwitch \
-    Seedvault
-
+    Seedvault \
+    AEXSetupWizard \
+    
 # Navbar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
