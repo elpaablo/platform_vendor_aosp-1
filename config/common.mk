@@ -74,7 +74,8 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     Seedvault \
     AEXSetupWizard \
-    
+    WallpaperPicker
+       
 # Navbar
 PRODUCT_PACKAGES += \
     GesturalNavigationOverlayLong \
@@ -184,3 +185,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Gestures by default
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+    
+# Adblock
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/etc/hosts.aicp_adblock:$(TARGET_COPY_OUT_SYSTEM)/etc
+    
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.aicp.adblock=true
+    
