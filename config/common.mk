@@ -74,7 +74,8 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     Seedvault \
     AEXSetupWizard \
-    WallpaperPicker
+    WallpaperPicker \
+    OmniJaws
        
 # Navbar
 PRODUCT_PACKAGES += \
@@ -188,8 +189,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     
 # Adblock
 PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/hosts.aicp_adblock:$(TARGET_COPY_OUT_SYSTEM)/etc
+    vendor/aosp/prebuilt/common/etc/hosts.aicp_adblock:$(TARGET_COPY_OUT_SYSTEM)/etc/hosts.aicp_adblock
     
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.aicp.adblock=true
+    
+ifeq ($(WITH_GAPPS),true)
+include vendor/gapps/gapps.mk
+endif
     
