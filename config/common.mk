@@ -67,7 +67,6 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     Stk \
-    AEXPapers \
     ExactCalculator \
     SoundPickerPrebuilt \
     CustomDoze \
