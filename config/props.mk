@@ -62,3 +62,15 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.surface_flinger.supports_background_blur=1 \
     ro.sf.blurs_are_expensive=1
+    
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.moto_unlock_service=true
+
+# Gestures by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+    
+# Adblocker
+#PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.aicp.adblock=true
+    

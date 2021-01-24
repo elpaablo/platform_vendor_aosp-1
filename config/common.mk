@@ -95,3 +95,12 @@ include vendor/arrow/config/props.mk
 
 # Sounds
 include vendor/arrow/config/sounds.mk
+
+# Adblock
+#PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/etc/hosts.aicp_adblock:$(TARGET_COPY_OUT_SYSTEM)/etc/hosts.aicp_adblock
+    
+ifeq ($(WITH_GAPPS),true)
+include vendor/gapps/gapps.mk
+endif
+

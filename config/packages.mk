@@ -28,7 +28,14 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     ArrowThemesStub \
     OmniJaws \
-    WeatherIcons
+    WeatherIcons 
+    
+# Custom packages
+PRODUCT_PACKAGES += \
+    FaceUnlockService \
+    Seedvault \
+    CustomDoze \
+#    AEXSetupWizard \
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
