@@ -35,7 +35,7 @@ PRODUCT_PACKAGES += \
     FaceUnlockService \
     Seedvault \
     CustomDoze \
-#    AEXSetupWizard \
+    ArrowSetupWizard \
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
@@ -59,8 +59,8 @@ PRODUCT_PACKAGES += \
 # Custom Overlays
 # Settings
 PRODUCT_PACKAGES += \
-    SystemRavenBlackOverlay \
-    SystemUIRavenBlackOverlay \
+    SystemRavenBlueOverlay \
+    SystemUIRavenBlueOverlay \
     SystemDarkGrayOverlay \
     SystemUIDarkGrayOverlay \
     SystemStyleOverlay \
