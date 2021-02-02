@@ -135,6 +135,7 @@ PRODUCT_COPY_FILES += \
 	vendor/arrow/sounds/ringtones/Zen_too.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Zen_too.ogg
 
 PRODUCT_PRODUCT_PROPERTIES += \
-   ro.config.ringtone=Zen_too.ogg \
-   ro.config.notification_sound=Chime.ogg \
-   ro.config.alarm_alert=Bright_morning.ogg
+   ro.config.ringtone=Shooting_star.ogg \
+   ro.config.notification_sound=Flick.ogg \
+   ro.config.alarm_alert=Gallop.ogg
+   

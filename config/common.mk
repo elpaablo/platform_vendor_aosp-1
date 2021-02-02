@@ -64,7 +64,7 @@ endif
 # Sensitive Phone Numbers list
 PRODUCT_COPY_FILES += \
     vendor/arrow/prebuilt/common/etc/sensitive_pn.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sensitive_pn.xml \
-		vendor/arrow/config/permissions/privapp-permissions-custom.xml:system/product/etc/permissions/privapp-permissions-custom.xml \
+    vendor/arrow/config/permissions/privapp-permissions-custom.xml:system/product/etc/permissions/privapp-permissions-custom.xml \
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
@@ -100,9 +100,10 @@ include vendor/arrow/config/sounds.mk
 include packages/overlays/Themes/themes.mk
 
 # Adblock
-#PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/hosts.aicp_adblock:$(TARGET_COPY_OUT_SYSTEM)/etc/hosts.aicp_adblock
+PRODUCT_COPY_FILES += \
+    vendor/arrow/prebuilt/common/etc/hosts.aicp_adblock:$(TARGET_COPY_OUT_SYSTEM)/etc/hosts.aicp_adblock
 
 ifeq ($(WITH_GAPPS),true)
 include vendor/gapps/gapps.mk
 endif
+
