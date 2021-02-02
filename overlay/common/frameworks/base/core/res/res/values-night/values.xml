@@ -17,8 +17,7 @@
 
 <resources>
 
-    </style>
-        <style name="Theme.DeviceDefault.QuickSettings" parent="android:Theme.DeviceDefault">
+    <style name="Theme.DeviceDefault.QuickSettings" parent="android:Theme.DeviceDefault">
         <item name="colorBackgroundFloating">#FF000000</item>
         <item name="panelColorBackground">#FF000000</item>
     </style>

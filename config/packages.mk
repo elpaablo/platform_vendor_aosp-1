@@ -36,6 +36,7 @@ PRODUCT_PACKAGES += \
     Seedvault \
     CustomDoze \
     ArrowSetupWizard \
+    Flipendo
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
