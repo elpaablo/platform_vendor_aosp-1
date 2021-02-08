@@ -67,10 +67,20 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     Stk \
-    AEXPapers \
-    WallpaperPickerGoogle \
-    Recorder \
-    ExactCalculator
+    ExactCalculator \
+    SoundPickerPrebuilt \
+    CustomDoze \
+    OmniSwitch \
+    Seedvault \
+    AEXSetupWizard \
+    WallpaperPicker \
+    OmniJaws
+       
+# Navbar
+PRODUCT_PACKAGES += \
+    GesturalNavigationOverlayLong \
+    GesturalNavigationOverlayMedium \
+    GesturalNavigationOverlayHidden
 
 # Cutout control overlays
 PRODUCT_PACKAGES += \
@@ -164,3 +174,26 @@ include packages/overlays/Themes/themes.mk
 
 # Recommend using the non debug dexpreopter
 USE_DEX2OAT_DEBUG := false
+
+# Face Unlock
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face.moto_unlock_service=true
+
+# Gestures by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.boot.vendor.overlay.theme=com.android.internal.systemui.navbar.gestural
+    
+# Adblock
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/etc/hosts.aicp_adblock:$(TARGET_COPY_OUT_SYSTEM)/etc/hosts.aicp_adblock
+    
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.aicp.adblock=true
+    
+ifeq ($(WITH_GAPPS),true)
+include vendor/gapps/gapps.mk
+endif
+    
