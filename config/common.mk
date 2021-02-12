@@ -74,7 +74,8 @@ PRODUCT_PACKAGES += \
     Seedvault \
     AEXSetupWizard \
     WallpaperPicker \
-    OmniJaws
+    OmniJaws \
+    AEXThemesStub
        
 # Navbar
 PRODUCT_PACKAGES += \
