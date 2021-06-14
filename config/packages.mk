@@ -28,7 +28,14 @@ PRODUCT_PACKAGES += \
     ThemePicker \
     ArrowThemesStub \
     OmniJaws \
-    WeatherIcons
+    WeatherIcons 
+    
+# Custom packages
+PRODUCT_PACKAGES += \
+    Seedvault \
+    CustomDoze \
+    ArrowSetupWizard \
+    Flipendo
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
@@ -52,8 +59,8 @@ PRODUCT_PACKAGES += \
 # Custom Overlays
 # Settings
 PRODUCT_PACKAGES += \
-    SystemRavenBlackOverlay \
-    SystemUIRavenBlackOverlay \
+    SystemRavenBlueOverlay \
+    SystemUIRavenBlueOverlay \
     SystemDarkGrayOverlay \
     SystemUIDarkGrayOverlay \
     SystemStyleOverlay \
